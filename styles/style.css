@@ -74,3 +74,34 @@ body    {
         margin-left: 10px;
     }
 }
+.promo  {
+    background: linear-gradient(228.4deg, #FFC000 1.55%, #FF8A00 95.8%);
+    padding: 109px 0;
+    position: relative;
+}
+.promo--container   {
+    max-width: 1188px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.promo__heading {
+    overflow: hidden;
+    font-size: 44px;
+    color: white;
+    margin: 0 auto;
+    line-height: 158.34%
+}
+.promo__txt {
+    font-size: 18px;
+    color: white;
+    line-height: 33px;
+}
+.promo__icons   {
+    background: url(../design/icons-promo.png) no-repeat;
+    display: inline-block;
+    width: 461px;
+    height: 299px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+}
