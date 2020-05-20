@@ -105,3 +105,50 @@ body    {
     top: 0;
     right: 10%;
 }
+.grid   {
+    overflow: hidden;
+    max-width: 928px;
+    margin: 47px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 9px;
+}
+.grid__item {
+    overflow: hidden;
+    height: 279px;
+    position: relative;
+    border-radius: 10px 10px;
+}
+.grid__txt  {
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 152.34%;
+    color: white;
+    background: linear-gradient(219.26deg, #FFC000 1.55%, #FF8A00 95.8%);
+}
+.grid__txt--short   {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 33px;
+    border-radius: 0 10px 0 10px;
+}
+.grid__txt--long    {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: 70px; */
+    height: 73px;
+}
+@media screen and (min-width: 900px)    {
+    .grid   {
+        grid-template-columns: repeat(3, 33,333%);
+    }
+}
