@@ -107,10 +107,10 @@ body    {
 }
 .grid   {
     overflow: hidden;
-    max-width: 928px;
+    max-width: 100%;
     margin: 47px 0;
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(1, 1fr);
     gap: 9px;
 }
 .grid__item {
@@ -147,8 +147,136 @@ body    {
     /* width: 70px; */
     height: 73px;
 }
+.page {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.page__txt  {
+    overflow: hidden;
+    padding: 73px 5px 0 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #2F2F2F;
+}
+.page__icon-list    {
+    margin-top: 70px;
+    background: url(../design/icon-list-white.svg) no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+}
+.page__icon-list:hover  {
+    background: url(../design/icon-list-gray.svg);
+}
+.page__icon-grid    {
+    background: url(../design/icon-grid-white.svg) no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-align: right;
+}
+.page__icon-grid:hover  {
+    background: url(../design/icon-grid-gray.svg);
+}
+.content    {
+    position: relative;
+}
+@media screen and (min-width: 600px){
+    .grid   {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+}
+@media screen and (min-width: 700px)    {
+    .grid   {
+        max-width: 75%;
+    }
+    .page   {
+        max-width: 75%;
+    }
+}
 @media screen and (min-width: 900px)    {
     .grid   {
-        grid-template-columns: repeat(3, 33,333%);
+        grid-template-columns: repeat(3, 32%);
     }
+}
+.courses    {
+    display: flex;
+    flex-direction: column;
+}
+.courses__txt   {
+    text-decoration: none;
+    color: #5C5C5C;
+    line-height: 105.47%;
+    margin-top: 22px;
+}
+.courses__txt--font-big {
+    font-size: 18px;
+}
+.courses__txt--font-small   {
+    font-size: 14px;
+}
+.paid   {
+    margin-top: 28px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 43px;
+    height: 42px;
+    display: inline-block;
+    font-size: 11px;
+    color: #5C5C5C;
+    border: 1px solid #5C5C5C;
+    border-radius: 23px;
+}
+.paid:hover {
+    background: linear-gradient(229.9deg, #FFC000 1.55%, #FF8A00 95.8%);
+    color: white;
+    border: none;
+}
+.courses__btn   {
+    text-align: center;
+    margin: 34px 0;
+    display: inline-block;
+    background: linear-gradient(229.9deg, #FFC000 1.55%, #FF8A00 95.8%);
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFEFC;
+    width: 160px;
+    height: 56px;
+    border-radius: 100px;
+}
+.oval   {
+    padding: 0 35px;
+}
+@media screen and (min-width: 700px) {
+    .courses    {
+        position: absolute;
+        top: 45px;
+        right: 0;
+    }
+}
+@media screen and (min-width: 900px)    {
+    .courses    {
+        position: absolute;
+        top: 45px;
+        right: 10%;
+    }
+}
+.footer {
+    background: #212121;
+    padding: 46px 0;
+    margin-top: 102px;
+}
+.txt-footer {
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.end    {
+    padding-top: 100px;
+}
+.basement   {
+    background: #000000;
 }
